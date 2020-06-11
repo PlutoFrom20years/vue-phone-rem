@@ -1,10 +1,10 @@
 <template>
 	<div class="bottom">
 		<van-tabbar v-model="active">
-			<van-tabbar-item icon="home-o">标签</van-tabbar-item>
-			<van-tabbar-item icon="search">标签</van-tabbar-item>
-			<van-tabbar-item icon="friends-o">标签</van-tabbar-item>
-			<van-tabbar-item icon="setting-o">标签</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-navbar_zhuye_xuanzhong">首页</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-iconnavbar07">标签</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-navbar_zhanpin_xuanzhong">标签</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-navbar_guanzhong_xuanzhong">我的</van-tabbar-item>
 		</van-tabbar>
 	</div>
 </template>

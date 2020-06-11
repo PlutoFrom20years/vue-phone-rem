@@ -6,6 +6,7 @@ import './assets/css/main.less' // 全局样式表
 // 引入vant组件以及样式
 import Vant from 'vant'
 import 'vant/lib/index.css'
+import './assets/font/iconfont.css'    //字体图标 
 // 全局注册vant组件
 Vue.config.productionTip = false
 Vue.use(Vant)

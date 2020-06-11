@@ -1,0 +1,58 @@
+{
+  "id": "1878249",
+  "name": "test",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1172547",
+      "name": "icon_navbar-07",
+      "font_class": "iconnavbar07",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "11338521",
+      "name": "4navbar_消息_选中",
+      "font_class": "navbar_xiaoxi_xuanzhong",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "11340786",
+      "name": "8navbar_展品_选中",
+      "font_class": "navbar_zhanpin_xuanzhong",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "11341079",
+      "name": "10navbar_主页_选中",
+      "font_class": "navbar_zhuye_xuanzhong",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11341739",
+      "name": "12navbar_观众_选中",
+      "font_class": "navbar_guanzhong_xuanzhong",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "11466710",
+      "name": "phone",
+      "font_class": "phone",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "14771887",
+      "name": "烤鸡腿",
+      "font_class": "kaojitui",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}
