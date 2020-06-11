@@ -1,19 +1,17 @@
 <template>
 	<div class="bottom">
-		<van-tabbar v-model="active">
-			<van-tabbar-item icon=" iconfont icon-navbar_zhuye_xuanzhong">首页</van-tabbar-item>
-			<van-tabbar-item icon=" iconfont icon-iconnavbar07">学习</van-tabbar-item>
-			<van-tabbar-item icon=" iconfont icon-navbar_zhanpin_xuanzhong">Blink</van-tabbar-item>
-			<van-tabbar-item icon=" iconfont icon-navbar_guanzhong_xuanzhong">我的</van-tabbar-item>
+		<van-tabbar route>
+			<van-tabbar-item icon="	iconfont icon-navbar_zhuye_xuanzhong" replace to="/">首页</van-tabbar-item>
+			<van-tabbar-item icon="	iconfont icon-iconnavbar07" replace to="/home">学习</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-navbar_zhanpin_xuanzhong" replace to="/home">Blink</van-tabbar-item>
+			<van-tabbar-item icon=" iconfont icon-navbar_guanzhong_xuanzhong" replace to="/home">我的</van-tabbar-item>
 		</van-tabbar>
 	</div>
 </template>
 <script>
 export default {
 	data() {
-		return {
-			active: 0
-		}
+		return {}
 	},
 	methods: {},
 	created() {

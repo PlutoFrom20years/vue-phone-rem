@@ -9,6 +9,15 @@ import 'vant/lib/index.css'
 import './assets/font/iconfont.css'    //字体图标 
 // 全局注册vant组件
 Vue.config.productionTip = false
+//路由拦截 这里也可以做一些token拦截
+router.beforeEach((to, from, next) => {
+  // 统一返回404
+  if (!to.matched.length && to.path !== '/404') {
+    next({ path: '/404' })
+    return false
+  }
+  next()
+})
 Vue.use(Vant)
 new Vue({
   router,
