@@ -6,6 +6,6 @@ module.exports = {
     open: true,
     port: 8055
   }
-  // 生产环境保存关闭eslint
-  // lintOnSave: process.env.NODE_ENV !== 'production'
+  // 关闭eslint 团队协同开发慎用
+  // lintOnSave: false
 }
