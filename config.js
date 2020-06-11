@@ -5,7 +5,7 @@
 // 发布版本
 const version = '1.0.0'
 // 发布日期
-const bundleVersion = '20191106'
+const bundleVersion = '20200614'
 
 // 服务接口地址
 const services = {

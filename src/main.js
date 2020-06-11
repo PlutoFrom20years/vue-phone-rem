@@ -7,8 +7,11 @@ import './assets/css/main.less' // 全局样式表
 import Vant from 'vant'
 import 'vant/lib/index.css'
 import './assets/font/iconfont.css'    //字体图标 
+import api from './api'
 // 全局注册vant组件
 Vue.config.productionTip = false
+// 将api挂载到Vue原型上，组件中通过this.api访问
+Vue.prototype.api = api
 //路由拦截 这里也可以做一些token拦截
 router.beforeEach((to, from, next) => {
   // 统一返回404

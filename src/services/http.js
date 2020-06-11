@@ -1,24 +1,29 @@
 import axios from 'axios'
-import config from '../config'
+import config from '../../config'
 import querystring from 'querystring'
+
+
 // 错误提示
 const networkErr = '网络请求超时'
-
+console.log('process', process.env.VUE_APP_API);
 const instance = axios.create({
   timeout: 15 * 1000, // 请求超时时间设置 15s
   withCredentials: false //  带cookie请求
   // headers: { 'Content-Type': '' }
 })
-
 // request 拦截器
 instance.interceptors.request.use(
   config => {
+    console.log(config);
+
     //  请求拦截的逻辑  例如校验是否带我token
   },
   err => {
     return Promise.reject(err)
   }
 )
+console.log('process.env.VUE_APP_API,', process.env);
+
 // response 拦截器
 instance.interceptors.response.use(
   res => {
@@ -36,26 +41,8 @@ instance.interceptors.response.use(
     return Promise.reject(err.response.data)
   }
 )
-
 const http = {
-  formatData: (code, res) => {
-    return new Promise((resolve, reject) => {
-      if (res.status === 200) {
-        const data = res.data
-        if (code) {
-          return resolve(data)
-        }
-        if (data.code * 1 === 0) {
-          return resolve(data.data || '')
-        } else {
-          return reject(data.msg || networkErr)
-        }
-      } else {
-        return reject(res.statusText)
-      }
-    })
-  },
-  get: (path, params, { url = '', port = 8810, code = false }) => {
+  get: (path, params, { url = '', port = 8810 }) => {
     return new Promise((resolve, reject) => {
       let apiUrl = `${config.apiUrl}:${port}${config.apiBaseUrl}${path}`
       if (url) {
@@ -78,7 +65,7 @@ const http = {
   post: (
     path,
     params,
-    { url = '', port = 8810, code = false, raw = false, file = false }
+    { url = '', port = 8810, raw = false, file = false }
   ) => {
     return new Promise((resolve, reject) => {
       let data = params
@@ -119,5 +106,6 @@ const http = {
     })
   }
 }
-
 export default http
+
+

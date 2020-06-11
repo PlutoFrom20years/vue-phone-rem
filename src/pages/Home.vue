@@ -25,7 +25,10 @@ export default {
 	methods: {
 		onSearch() {}
 	},
-	created() {}
+	created() {
+		// api请求案列  在本地.env.dev.local文件的 VUE_APP_API 以及 端口进行配置   请求中只需要填写后台提供的接口  例如/test/demo     而本地开发的.env.dev.local文件应在gitignore中忽略
+		this.api.home.demo()
+	}
 }
 </script>
 <style lang='less' scoped>
