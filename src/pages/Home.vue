@@ -12,7 +12,7 @@
 			<van-swipe-item>3</van-swipe-item>
 			<van-swipe-item>4</van-swipe-item>
 		</van-swipe>
-		<p class="info">这是一个rem布局项目模版</p>
+		<p class="info">这是一个移动端rem布局项目模版</p>
 	</div>
 </template>
 <script>
