@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.0",
     "axios": "^0.19.2",
     "core-js": "^3.6.5",
     "crypto-js": "^4.0.0",
@@ -15,6 +16,7 @@
     "querystring": "^0.2.0",
     "vant": "^2.8.5",
     "vue": "^2.6.11",
+    "vue-falls": "^2.0.8",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

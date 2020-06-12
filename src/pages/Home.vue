@@ -2,7 +2,7 @@
 	<div class="home">
 		<van-search v-model="value" show-action label="地址" placeholder="请输入搜索关键词" @search="onSearch">
 			<template #action>
-				<div @click="onSearch">搜索</div>
+				<div @click="onSearch" class="animated infinite bounce">搜索</div>
 			</template>
 		</van-search>
 		<!-- <van-nav-bar title="标题" left-text="返回" right-text="按钮" left-arrow @click-left="onClickLeft" @click-right="onClickRight" /> -->
@@ -12,7 +12,7 @@
 			<van-swipe-item>3</van-swipe-item>
 			<van-swipe-item>4</van-swipe-item>
 		</van-swipe>
-		<p class="info">这是一个移动端rem布局项目模版</p>
+		<p class="info animate__animated  animate__bounce ">这是一个移动端rem布局项目模版</p>
 	</div>
 </template>
 <script>

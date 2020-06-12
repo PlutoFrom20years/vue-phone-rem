@@ -2,7 +2,7 @@
 	<div class="bottom">
 		<van-tabbar route>
 			<van-tabbar-item icon="	iconfont icon-navbar_zhuye_xuanzhong" replace to="/">首页</van-tabbar-item>
-			<van-tabbar-item icon="	iconfont icon-iconnavbar07" replace to="/home">学习</van-tabbar-item>
+			<van-tabbar-item icon="	iconfont icon-iconnavbar07" replace to="/study">学习</van-tabbar-item>
 			<van-tabbar-item icon=" iconfont icon-navbar_zhanpin_xuanzhong" replace to="/home">Blink</van-tabbar-item>
 			<van-tabbar-item icon=" iconfont icon-navbar_guanzhong_xuanzhong" replace to="/home">我的</van-tabbar-item>
 		</van-tabbar>

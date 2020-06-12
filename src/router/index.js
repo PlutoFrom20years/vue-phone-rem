@@ -13,6 +13,12 @@ const routes = [
     name: '404',
     // 路由懒加载  404
     component: () => import(/* webpackChunkName: "about" */ '../pages/NotFound.vue')
+  },
+  {
+    path: '/study',
+    name: 'study',
+    // 路由懒加载  404
+    component: () => import(/* webpackChunkName: "about" */ '../pages/Study.vue')
   }
 ]
 const router = new VueRouter({
