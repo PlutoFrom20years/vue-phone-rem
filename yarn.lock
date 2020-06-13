@@ -8663,10 +8663,10 @@ vue-eslint-parser@^7.0.0:
     esquery "^1.0.1"
     lodash "^4.17.15"
 
-vue-falls@^2.0.8:
-  version "2.0.8"
-  resolved "https://registry.yarnpkg.com/vue-falls/-/vue-falls-2.0.8.tgz#efd6fd1c8ad26a992af4e4308040935e04c43df8"
-  integrity sha512-Y369fIrx5d8n/6UMZQ/1JLF8bopFKct/9NcR30xY88RSbYyTzoyxS1afA7Qi+Z4ajklly6AXcC2dMY11hsrAvQ==
+vue-falls@^2.1.1:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/vue-falls/-/vue-falls-2.1.1.tgz#e8453b8f6aac4fb2de00dba3fe3f9000af011fb3"
+  integrity sha512-1vw7XT5/LqS2PTIO9Xfkf8Ol5ry9+ZeToOtm+YaOO466PqeTLOpGFD+/cEQaZMqykvHa49/cZr2N6eloEFnq9w==
   dependencies:
     css-loader "^3.5.3"
     style-loader "^1.2.1"

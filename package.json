@@ -16,7 +16,7 @@
     "querystring": "^0.2.0",
     "vant": "^2.8.5",
     "vue": "^2.6.11",
-    "vue-falls": "^2.0.8",
+    "vue-falls": "^2.1.1",
     "vue-router": "^3.2.0"
   },
   "devDependencies": {

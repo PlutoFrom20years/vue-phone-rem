@@ -1,6 +1,6 @@
 <template>
 	<div class="study">
-		<van-search v-model="value" shape="round" background="#cccc" placeholder="请输入搜索关键词" @input="onInput" />
+		<van-search v-model="value" shape="round" background="#cccc" placeholder="输入数字试试吧～" @input="onInput" />
 		<vue-falls :photoList='photoList' :row='row'></vue-falls>
 	</div>
 </template>
@@ -51,12 +51,9 @@ export default {
 	},
 	methods: {
 		onInput(val) {
-			console.log('hah')
 			val = +val
-			console.log('val', val)
 			if (typeof val === 'number' && val % 1 === 0) {
 				this.row = val
-				console.log('this.row', this.row)
 			} else {
 				Toast.fail('请输入纯数字')
 				this.row = 3
